@@ -140,24 +140,8 @@ def get_instructions(recipe_id):
         return f"Request failed: {str(e)}"
 
 
-#def substitute(ingredient):
-    key = "4f088b97d9a3497a83eecf3e6f984805"
-    URL = "https://api.spoonacular.com/food/ingredients/substitutes"
-
-    params = {"ingredientName": ingredient.lower(), "apiKey": key}
-
-    try:
-        response = requests.get(URL, params=params)
-        response = response.json()
-        return response["substitutes"]
-
-    except requests.RequestException as e:
-        return f"Request failed: {str(e)}"
-
-
 if __name__ == "__main__":
     main()
-
 
 #4f088b97d9a3497a83eecf3e6f984805 - Aymen
 #9815d21b945e4546bc171dba4b266adb - NizarAlt
