@@ -24,6 +24,42 @@ Understanding the file structure is beneficial for those exploring the applicati
 - **`app.py`**: This crucial file contains the comprehensive codebase for the Streamlit application, orchestrating the app's functionalities and interactions.
 - **`requirements.txt`**: A vital file listing all required Python packages, ensuring a smooth setup for users.
 
+
+## Code Documentation
+#### Functions:
+- **`main()` Function**:
+  - **Purpose**: Controls the primary functionalities of the Streamlit application.
+  - **Responsibilities**:
+    - Receives user input for recipe search criteria (query, dietary preferences, and intolerances).
+    - Retrieves and displays recipe information, including ingredients and instructions.
+    - Handles potential errors during API requests.
+  
+- **`get_recipe(query, diet, intolerances)` Function**
+  - **Purpose**: Fetches recipes from the Spoonacular API based on user input criteria.
+  - **Parameters**:
+    - `query`
+    - `diet`
+    - `intolerances`
+  - **Returns** JSON response containing recipes and their details.
+
+- **`get_ingredients(recipe_id)` Function**
+  - **purpose**: Fetches ingredients for a selected recipe identified by a unique id from the Spoonacular API.
+  - **Parameters**:
+    - `recipe_id`
+  - **Returns** JSON response with ingredient information.
+ 
+- **`get_instructions(recipe_id)` Function**
+  - **purpose**: Retrieves instructions for a selected recipe identified by a unique id from the Spoonacular API.
+  - **Parameters**:
+    - `recipe_id`
+  - **Returns** JSON response with cooking instructions.
+
+  
+#### Dependencies:
+- **`requests`**:
+  - **Purpose**: Used to make HTTP requests to the Spoonacular API to fetch recipe data.
+
+  
 ## Important Notes
 A few essential considerations enhance the understanding and usage of The Web Cookbook:
 
