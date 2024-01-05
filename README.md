@@ -21,8 +21,8 @@ Getting started with The Web Cookbook is hassle-free:
 ## Structural Overview
 Understanding the file structure is beneficial for those exploring the application:
 
-- **`app.py`**: This crucial file contains the comprehensive codebase for the Streamlit application, orchestrating the app's functionalities and interactions.
-- **`requirements.txt`**: A vital file listing all required Python packages, ensuring a smooth setup for users.
+- **`app.py`**: This file contains thecodebase for the Streamlit application.
+- **`requirements.txt`**: A file listing all required Python packages.
 
 
 ## Code Documentation
